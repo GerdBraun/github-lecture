@@ -1,6 +1,13 @@
-/* definitions */
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* definitions (usable for everything, can all be changed in one place here) */
 :root {
-    /*  colors */
+    /* text colors */
+    --color-standard:#174a5a;
+    --color-inverted:white;
+
+    /*  background-colors */
     --color-bg-normal: #c0d3d9;
     --color-bg-dark: #174a5a;
     --color-bg-highlight: orangered;
@@ -22,20 +29,30 @@
 
     font-family: "Roboto", sans-serif;
     font-size: 16px;
+    color: var(--color-standard);
 }
 /* / reset */
 
-/* container background colors */
-section {
+/* centered wrapper (used to center content if viewport gets too big) */
+.centered-wrapper {
     width: 100%;
     max-width: var(--dimension-max-width);
     margin: 0 auto;
-    background-color: var(--color-bg-normal);
+    padding: 1rem;
 }
-section.bg-dark {
+/* / centered wrapper */
+
+/* container background colors */
+.bg-dark {
     background-color: var(--color-bg-dark);
 }
-section.bg-highlight {
+.bg-highlight {
     background-color: var(--color-bg-highlight);
 }
 /* / container background colors */
+
+/* text-colors */
+.color-inverted *{
+    color:var(--color-inverted);
+}
+/* / text-colors */
