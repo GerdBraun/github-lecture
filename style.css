@@ -6,6 +6,8 @@
     /* text colors */
     --color-standard:#174a5a;
     --color-inverted:white;
+    --color-linkcolor: #498496;
+    --color-highlight: orangered;
 
     /*  background-colors */
     --color-bg-normal: #c0d3d9;
@@ -33,6 +35,16 @@
 }
 /* / reset */
 
+/* general settings */
+a {
+    text-decoration: none;
+    color: var(--color-linkcolor);
+}
+a:hover {
+    color:var(--color-highlight);
+}
+/* / general settings */
+
 /* centered wrapper (used to center content if viewport gets too big) */
 .centered-wrapper {
     width: 100%;
@@ -56,3 +68,19 @@
     color:var(--color-inverted);
 }
 /* / text-colors */
+
+/* main navigation */
+.main-navigation .pagetitle{
+    font-size: 2rem;
+}
+.main-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-navigation ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+/* / main navigation */
