@@ -1,16 +1,18 @@
 /* definitions */
 :root {
     /*  colors */
+    --color-bg-normal: #c0d3d9;
     --color-bg-dark: #174a5a;
     --color-bg-highlight: orangered;
 
     /* sizes */
-    --max-width: 1200px;
-    --max-padding: 20px;
+    --dimension-max-width: 1200px;
+    --dimension-max-padding: 20px;
 
     /* gaps */
-    --main-gap: 30px;
+    --dimension-main-gap: 30px;
 }
+/* / definitions */
 
 /* reset */
 * {
@@ -21,4 +23,19 @@
     font-family: "Roboto", sans-serif;
     font-size: 16px;
 }
+/* / reset */
 
+/* container background colors */
+section {
+    width: 100%;
+    max-width: var(--dimension-max-width);
+    margin: 0 auto;
+    background-color: var(--color-bg-normal);
+}
+section.bg-dark {
+    background-color: var(--color-bg-dark);
+}
+section.bg-highlight {
+    background-color: var(--color-bg-highlight);
+}
+/* / container background colors */
